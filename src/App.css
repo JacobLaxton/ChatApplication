@@ -1,15 +1,103 @@
+/* Styling for entire app */
 .App {
-  text-align: center;
-  background: cadetblue;
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content:space-between;
 }
 
 .header {
-  height: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
   width: 100vw;
-  background-color: coral;
-  }
+  background-color: #7a267a;
+}
 
+.logo {
+  background-image: url("logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80%;
+  width: 80%;
+}
+
+.message {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  display: inline-block;
+  text-align: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-basis: initial;
+  flex: 1;
+  background-color: #ffd6ff;
+  height: 100%;
+  padding: 3rem;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.message-row {
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.send-button {
+  position: absolute;
+  right: .7rem;
+  bottom: .7rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 100%;
+  border: none;
+  background-color: hsl(293, 100%, 39%);
+  cursor: pointer; 
+  outline: none;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-button[disabled]{
+  background-color: hsl(0, 0%, 46%);
+  cursor: default;
+}
+
+.input {
+  height: 1.5rem;
+  width: calc(100% - 3rem);
+  border-radius: .75rem;
+  outline: none;
+  border: none;
+  padding-left: 1.5rem;
+
+}
+
+.text-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+
+  width: 100%;
+  height: 3rem;
+
+  position: relative;
+  background-color: hsla(300, 100%, 82%, 0.76)
+}
