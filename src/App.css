@@ -34,6 +34,14 @@
   padding-right: 1rem;
   padding-top: .3rem;
   padding-bottom: .3rem;
+  position: relative;
+}
+
+.message-name {
+  position:absolute;
+  top: -1rem;
+  font-size: .7rem;
+  width: 80vw;
 }
 
 .messages {
@@ -50,8 +58,9 @@
 
 .message-row {
   width: 100%;
-  margin-bottom: 5px;
-  margin-top: 5px;
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: .5rem;
 }
 
 .send-button {
@@ -100,4 +109,49 @@
 
   position: relative;
   background-color: hsla(300, 100%, 82%, 0.76)
+}
+
+.name-picker {
+  display: flex;
+  color: white;
+  margin-right: 1rem;
+  justify-content: center;
+  align-items: center
+  ;
+}
+
+.name-input {
+  background: hsl(300, 42%, 51%);
+  color: white;
+  font-weight: 400;
+  border-radius: .4rem;
+  padding-left: .4rem;
+  border: none;
+  font-size: 1rem;
+  width: 6rem;
+
+}
+
+.ok-button {
+  margin-left: 1rem;
+  border: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+  font-weight: 900;
+  background-color: #7A267A;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.edit-button {
+  margin-left: 1rem;
+  border: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("Group45.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }

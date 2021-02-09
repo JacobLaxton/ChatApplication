@@ -24,11 +24,8 @@ function TextInput(props) {
             onChange={e=> setText(e.target.value)}
             onKeyPress={keyPressed}
         />
-        <button className="send-button"
-            onClick={sendMessage} disabled={!text} 
-        >	<FiSend title="send" 
-            style={{minWidth:'0.7rem'}} 
-            />
+        <button className="send-button" onClick={sendMessage} disabled={!text} >	
+            <FiSend title="send" style={{minWidth:'0.7rem'}} />
         </button>
     </footer>
 
